@@ -5,7 +5,7 @@ type RecursiveType = {
   items: any[];
 };
 
-const RecursiveComponent = (recursiveItem: RecursiveType) => {
+function RecursiveComponent(recursiveItem: RecursiveType) {
   const hasChildren = recursiveItem.items && recursiveItem.items.length;
 
   return (
@@ -17,6 +17,6 @@ const RecursiveComponent = (recursiveItem: RecursiveType) => {
         ))}
     </>
   );
-};
+}
 
 export default RecursiveComponent;
