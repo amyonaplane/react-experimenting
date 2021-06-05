@@ -11,7 +11,6 @@ const AppContainer = styled.div`
 function RecursiveComponentApp() {
   return (
     <AppContainer>
-      <header>React Experimenting</header>
       <RecursiveComponent {...data} />
     </AppContainer>
   );
