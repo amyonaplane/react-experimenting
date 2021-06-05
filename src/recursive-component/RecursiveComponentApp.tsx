@@ -2,20 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import styled from "styled-components";
 import RecursiveComponent from "./RecursiveComponent";
-
-const data = {
-  name: "Level 1",
-  items: [
-    {
-      name: "Level 2",
-      items: [
-        {
-          name: "Level 3",
-        },
-      ],
-    },
-  ],
-};
+import { data } from "./data";
 
 const AppContainer = styled.div`
   background-color: ${(props) => props.theme.background};
