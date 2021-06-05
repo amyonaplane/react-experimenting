@@ -12,11 +12,9 @@ const RecursiveComponent = (recursiveItem: RecursiveType) => {
     <>
       {recursiveItem.name}
       {hasChildren &&
-        recursiveItem.items.map(
-          (item: JSX.IntrinsicAttributes & { name: any; items: any }) => (
-            <RecursiveComponent key={item.name} {...item} />
-          )
-        )}
+        recursiveItem.items.map((item: RecursiveType) => (
+          <RecursiveComponent key={item.name} {...item} />
+        ))}
     </>
   );
 };
